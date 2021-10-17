@@ -1,0 +1,18 @@
+plugins {
+	id 'eclipse'
+    id 'java-library'
+    id 'java-test-fixtures'
+}
+
+sourceSets {
+    testFixtures {
+        java {
+            // change this to 'xte_stx' (or anything not containing the string 'test') and everything is fine!
+            srcDirs = ['xtestx']
+        }
+        
+        resources {
+            srcDirs = ['xxx']
+        }
+    }    
+}
